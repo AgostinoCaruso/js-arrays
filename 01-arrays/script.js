@@ -29,6 +29,19 @@ teachers.unshift("Sarah");
 // e salva il risultato nella variabile isFabioPresent
 const isFabioPresent = teachers.includes("Fabio");
 console.log(isFabioPresent); // se esce true vuol dire che fabio ci sta nell'array
+//fatto senza includes - bonus
+let isFabioPresentForLoop;
+let isFound = false; //flag
+for(let i = 0; i< teachers.length;i++){
+  if(teachers[i] == "Fabio"){
+    isFabioPresentForLoop = teachers[i];
+    console.log(teachers[i] + " is indeed present, " + isFabioPresent);
+    isFound=true;  
+    break; //found
+  }
+}if(!isFound){//if flag is false fabio is not in the list
+  console.log("Fabio isn't present in the list!");
+}
 // 8. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
 const lewisIndex = teachers.indexOf("Lewis");
