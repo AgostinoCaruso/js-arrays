@@ -10,7 +10,7 @@ const teachers = [
 
 // 1. Utilizzando un indice sull'array teachers, cambia il valore della
 // variabile fourthTeacher qui sotto in modo che sia il quarto insegnante elencato nell'array
-const fourthTeacher = teachers.splice(3,1); // non ho capito bene la domanda
+const fourthTeacher = teachers[3];
 console.log(fourthTeacher);
 // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
 teachers.splice(4,1,"Patrick"); //Ho cambiato il quinto (4) insegnante con patrick

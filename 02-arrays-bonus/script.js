@@ -17,3 +17,4 @@ const reversedTeachers = null;
 const longNames = null;
 
 // 3. Rimuovi 'Ed' dall'array teachers
+teachers.splice(1,1);
